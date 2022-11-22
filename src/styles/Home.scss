@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&display=swap");
+
+.Home {
+  width: 100%;
+  height: 831px;
+  background-color: rgba(26, 24, 24, 0.81);
+
+  .Rectangle {
+    width: 100vw;
+    height: 100px;
+    flex-grow: 0;
+    padding: 20px 37px 24px 28px;
+    background-color: rgba($color: #000000, $alpha: 1);
+
+    .Player-ONE {
+      width: 227px;
+      height: 52px;
+      flex-grow: 0;
+      margin: 4px 165px 0 0;
+      font-family: Inika;
+      font-size: 40px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #fff;
+    }
+
+    .Community {
+      width: 138px;
+      height: 30px;
+      flex-grow: 0;
+      margin: 14px 53px 12px 165px;
+      font-family: InriaSerif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+        transition-duration: 2s;
+      }
+    }
+    .Products {
+      width: 105px;
+      height: 30px;
+      flex-grow: 0;
+      margin: 15px 53px 11px;
+      font-family: InriaSerif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+        transition-duration: 2s;
+      }
+    }
+    .Overview {
+      width: 109px;
+      height: 30px;
+      flex-grow: 0;
+      margin: 15px 296px 11px 53px;
+      font-family: InriaSerif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+        transition-duration: 2s;
+      }
+    }
+  }
+
+  .Image {
+    width: 100%;
+    height: 648px;
+    flex-grow: 0;
+    padding: 89px 106px 33px 91px;
+    opacity: 0.4;
+    background-image: url("../../public//image/background.jpg");
+    background-size: cover;
+
+    .logo {
+      width: 458px;
+      height: 428px;
+      flex-grow: 0;
+      margin: 98px 0 0 625px;
+      border-radius: 5px;
+      box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      border: solid 1px rgba($color: #080808, $alpha: 1);
+      background: url("../../public/image/logo1.png");
+    }
+
+    .CAPSTONE-NBBANG {
+      width: 313px;
+      height: 114px;
+      flex-grow: 0;
+      margin: 0 609px 76px 0;
+      font-family: InriaSerif;
+      font-size: 32px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      text-align: left;
+      color: #90ffeb;
+    }
+
+    .Smart-Control-platform-with-electrode-signal {
+      width: 922px;
+      height: 48px;
+      flex-grow: 0;
+      margin: 39px 0 11px;
+      font-family: InriaSerif;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #fff;
+    }
+    .Its-not-just-muscles-that-can-move-We-expand-the-limits-of-our-bodies {
+      width: 466px;
+      height: 72px;
+      flex-grow: 0;
+      margin: 11px 456px 20px 0;
+      font-family: KaiseiHarunoUmi;
+      font-size: 25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.25px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/Home.scss";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Home">
+      <div className="Rectangle">
+        <span className="Player-ONE">Player ONE</span>
+        <span className="Community">Community</span>
+        <span className="Products">Products</span>
+        <span className="Overview">Overview</span>
+      </div>
+      <div className="Image">
+        <span className="CAPSTONE-NBBANG">CAPSTONE NBBANG</span>
+        <br />
+        <span className="Smart-Control-platform-with-electrode-signal">
+          Smart Control platform with electrode signal
+        </span>
+        <br />
+        <span class="Its-not-just-muscles-that-can-move-We-expand-the-limits-of-our-bodies">
+          It's not just muscles that can move
+          <br /> We expand the limits of our bodies
+        </span>
+        <div className="logo"></div>
+      </div>
     </div>
   );
 }
-
 export default App;
