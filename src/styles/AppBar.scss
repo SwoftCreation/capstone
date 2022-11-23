@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&display=swap");
+.AppBar {
+  width: 100%;
+  height: 100px;
+  flex-grow: 0;
+  padding: 20px 0px 24px 0px;
+  background-color: rgba($color: #000000, $alpha: 1);
+
+  .Player-ONE {
+    width: 227px;
+    height: 52px;
+    white-space: nowrap;
+    flex-grow: 0;
+    margin: 5% auto 5% 5%;
+    font-family: Inika;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Community {
+    width: 138px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 14px 53px 12px 165px;
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    &:hover {
+      border-bottom: #49dfb9 solid;
+      transition: all 0.4s;
+      font-size: 30px;
+      color: #49dfb9;
+    }
+    &:not(:hover) {
+      transition: all 0.2s;
+    }
+  }
+  .Products {
+    width: 105px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 15px 53px 11px;
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    &:hover {
+      border-bottom: #49dfb9 solid;
+      transition: all 0.4s;
+      font-size: 30px;
+      color: #49dfb9;
+    }
+    &:not(:hover) {
+      transition: all 0.2s;
+    }
+  }
+  .Overview {
+    width: 109px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 15px 296px 11px 53px;
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    &:hover {
+      border-bottom: #49dfb9 solid;
+      transition: all 0.4s;
+      color: #49dfb9;
+      font-size: 30px;
+    }
+    &:not(:hover) {
+      transition: all 0.2s;
+    }
+  }
+  .Sign-in {
+    width: 69px;
+    height: 30px;
+    flex-grow: 0;
+
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #90ffeb;
+  }
+}

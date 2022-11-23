@@ -1,39 +1,13 @@
 import "./styles/Home.scss";
-import "./App.css";
+
+import AppBar from "./components/AppBar";
+import Front from "./components/Front";
 
 function App() {
   return (
     <div className="Home">
-      <div className="Rectangle">
-        <span className="Player-ONE">Player ONE</span>
-        <span className="Community">Community</span>
-        <span className="Products">Products</span>
-        <span className="Overview">Overview</span>
-        <span class="Sign-in">Sign in</span>
-      </div>
-      <div class="background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span className="CAPSTONE-NBBANG">CAPSTONE NBBANG</span>
-      </div>
+      <AppBar />
+      <Front />
     </div>
   );
 }
