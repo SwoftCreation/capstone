@@ -2,22 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&display=swap");
 
 .Home {
-  width: 100%;
+  width: 100vw;
   height: 831px;
   background-color: rgba(26, 24, 24, 0.81);
 
   .Rectangle {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     flex-grow: 0;
-    padding: 20px 37px 24px 28px;
+    padding: 20px 0px 24px 0px;
     background-color: rgba($color: #000000, $alpha: 1);
 
     .Player-ONE {
       width: 227px;
       height: 52px;
+      white-space: nowrap;
       flex-grow: 0;
-      margin: 4px 165px 0 0;
+      margin: 5% auto 5% 5%;
       font-family: Inika;
       font-size: 40px;
       font-weight: normal;
@@ -44,8 +45,13 @@
       text-align: left;
       color: #fff;
       &:hover {
-        text-decoration: underline;
-        transition-duration: 2s;
+        border-bottom: #49dfb9 solid;
+        transition: all 0.4s;
+        font-size: 30px;
+        color: #49dfb9;
+      }
+      &:not(:hover) {
+        transition: all 0.2s;
       }
     }
     .Products {
@@ -63,8 +69,13 @@
       text-align: left;
       color: #fff;
       &:hover {
-        text-decoration: underline;
-        transition-duration: 2s;
+        border-bottom: #49dfb9 solid;
+        transition: all 0.4s;
+        font-size: 30px;
+        color: #49dfb9;
+      }
+      &:not(:hover) {
+        transition: all 0.2s;
       }
     }
     .Overview {
@@ -82,20 +93,45 @@
       text-align: left;
       color: #fff;
       &:hover {
-        text-decoration: underline;
-        transition-duration: 2s;
+        border-bottom: #49dfb9 solid;
+        transition: all 0.4s;
+        color: #49dfb9;
+        font-size: 30px;
       }
+      &:not(:hover) {
+        transition: all 0.2s;
+      }
+    }
+    .Sign-in {
+      width: 69px;
+      height: 30px;
+      flex-grow: 0;
+
+      font-family: InriaSerif;
+      font-size: 25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #90ffeb;
     }
   }
 
-  .Image {
-    width: 100%;
-    height: 648px;
-    flex-grow: 0;
-    padding: 89px 106px 33px 91px;
-    opacity: 0.4;
-    background-image: url("../../public//image/background.jpg");
-    background-size: cover;
+  @keyframes move {
+    100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+  }
+
+  .background {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #050505;
+    overflow: hidden;
 
     .logo {
       width: 458px;
@@ -109,10 +145,8 @@
     }
 
     .CAPSTONE-NBBANG {
-      width: 313px;
-      height: 114px;
       flex-grow: 0;
-      margin: 0 609px 76px 0;
+      margin: 20px auto auto 5px;
       font-family: InriaSerif;
       font-size: 32px;
       font-weight: bold;
@@ -121,12 +155,11 @@
       line-height: normal;
       letter-spacing: 1.6px;
       text-align: left;
+      white-space: nowrap;
       color: #90ffeb;
     }
 
     .Smart-Control-platform-with-electrode-signal {
-      width: 922px;
-      height: 48px;
       flex-grow: 0;
       margin: 39px 0 11px;
       font-family: InriaSerif;
@@ -140,8 +173,6 @@
       color: #fff;
     }
     .Its-not-just-muscles-that-can-move-We-expand-the-limits-of-our-bodies {
-      width: 466px;
-      height: 72px;
       flex-grow: 0;
       margin: 11px 456px 20px 0;
       font-family: KaiseiHarunoUmi;
@@ -153,6 +184,218 @@
       letter-spacing: 1.25px;
       text-align: left;
       color: #fff;
+    }
+
+    span {
+      width: 12vmin;
+      height: 12vmin;
+      border-radius: 12vmin;
+      backface-visibility: hidden;
+      position: absolute;
+      animation: move;
+      animation-duration: 37;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+
+      &:nth-child(0) {
+        color: #6563bf;
+        top: 82%;
+        left: 84%;
+        animation-duration: 108s;
+        animation-delay: -23s;
+        transform-origin: -17vw 21vh;
+        box-shadow: -24vmin 0 3.6039222882947755vmin currentColor;
+      }
+
+      &:nth-child(1) {
+        color: #49dfb9;
+        top: 57%;
+        left: 89%;
+        animation-duration: 38s;
+        animation-delay: -125s;
+        transform-origin: -22vw -13vh;
+        box-shadow: -24vmin 0 3.8319028467603546vmin currentColor;
+      }
+
+      &:nth-child(2) {
+        color: #6563bf;
+        top: 98%;
+        left: 73%;
+        animation-duration: 29s;
+        animation-delay: -83s;
+        transform-origin: 5vw 12vh;
+        box-shadow: 24vmin 0 3.533911187878365vmin currentColor;
+      }
+
+      &:nth-child(3) {
+        color: #ffffff;
+        top: 9%;
+        left: 8%;
+        animation-duration: 125s;
+        animation-delay: -40s;
+        transform-origin: -8vw -21vh;
+        box-shadow: -24vmin 0 3.7376613616847263vmin currentColor;
+      }
+
+      &:nth-child(4) {
+        color: #6563bf;
+        top: 48%;
+        left: 29%;
+        animation-duration: 43s;
+        animation-delay: -82s;
+        transform-origin: -24vw -9vh;
+        box-shadow: 24vmin 0 3.4610240737450986vmin currentColor;
+      }
+
+      &:nth-child(5) {
+        color: #ffffff;
+        top: 88%;
+        left: 29%;
+        animation-duration: 26s;
+        animation-delay: -62s;
+        transform-origin: 6vw -15vh;
+        box-shadow: 24vmin 0 3.89008919036608vmin currentColor;
+      }
+
+      &:nth-child(6) {
+        color: #49dfb9;
+        top: 32%;
+        left: 37%;
+        animation-duration: 50s;
+        animation-delay: -65s;
+        transform-origin: -4vw -23vh;
+        box-shadow: 24vmin 0 3.433775432345831vmin currentColor;
+      }
+
+      &:nth-child(7) {
+        color: #6563bf;
+        top: 73%;
+        left: 91%;
+        animation-duration: 8s;
+        animation-delay: -44s;
+        transform-origin: -3vw 16vh;
+        box-shadow: 24vmin 0 3.6734999481547224vmin currentColor;
+      }
+
+      &:nth-child(8) {
+        color: #49dfb9;
+        top: 11%;
+        left: 75%;
+        animation-duration: 118s;
+        animation-delay: -46s;
+        transform-origin: 0vw 17vh;
+        box-shadow: -24vmin 0 3.829600986781403vmin currentColor;
+      }
+
+      &:nth-child(9) {
+        color: #49dfb9;
+        top: 29%;
+        left: 14%;
+        animation-duration: 118s;
+        animation-delay: -89s;
+        transform-origin: 20vw 13vh;
+        box-shadow: -24vmin 0 3.6899425903663854vmin currentColor;
+      }
+
+      &:nth-child(10) {
+        color: #ffffff;
+        top: 84%;
+        left: 54%;
+        animation-duration: 94s;
+        animation-delay: -82s;
+        transform-origin: 18vw 24vh;
+        box-shadow: 24vmin 0 3.854771848449629vmin currentColor;
+      }
+
+      &:nth-child(11) {
+        color: #6563bf;
+        top: 71%;
+        left: 6%;
+        animation-duration: 18s;
+        animation-delay: -31s;
+        transform-origin: -10vw -14vh;
+        box-shadow: 24vmin 0 3.285094046597122vmin currentColor;
+      }
+
+      &:nth-child(12) {
+        color: #6563bf;
+        top: 46%;
+        left: 5%;
+        animation-duration: 56s;
+        animation-delay: -62s;
+        transform-origin: -11vw 13vh;
+        box-shadow: 24vmin 0 3.742627409992009vmin currentColor;
+      }
+
+      &:nth-child(13) {
+        color: #49dfb9;
+        top: 10%;
+        left: 87%;
+        animation-duration: 118s;
+        animation-delay: -37s;
+        transform-origin: 7vw -13vh;
+        box-shadow: 24vmin 0 3.3047162089522955vmin currentColor;
+      }
+
+      &:nth-child(14) {
+        color: #6563bf;
+        top: 24%;
+        left: 100%;
+        animation-duration: 32s;
+        animation-delay: -24s;
+        transform-origin: -1vw -10vh;
+        box-shadow: 24vmin 0 3.227705722092741vmin currentColor;
+      }
+
+      &:nth-child(15) {
+        color: #ffffff;
+        top: 13%;
+        left: 51%;
+        animation-duration: 79s;
+        animation-delay: -79s;
+        transform-origin: -17vw 8vh;
+        box-shadow: 24vmin 0 3.2953146437419756vmin currentColor;
+      }
+
+      &:nth-child(16) {
+        color: #ffffff;
+        top: 88%;
+        left: 81%;
+        animation-duration: 96s;
+        animation-delay: -27s;
+        transform-origin: 0vw 1vh;
+        box-shadow: -24vmin 0 3.153864963172243vmin currentColor;
+      }
+
+      &:nth-child(17) {
+        color: #49dfb9;
+        top: 56%;
+        left: 49%;
+        animation-duration: 74s;
+        animation-delay: -97s;
+        transform-origin: -16vw -21vh;
+        box-shadow: -24vmin 0 3.663389156720771vmin currentColor;
+      }
+
+      &:nth-child(18) {
+        color: #49dfb9;
+        top: 49%;
+        left: 19%;
+        animation-duration: 134s;
+        animation-delay: -5s;
+        transform-origin: 22vw -8vh;
+        box-shadow: -24vmin 0 3.799090679214491vmin currentColor;
+      }
+
+      &:nth-child(19) {
+        color: #ffffff;
+        top: 88%;
+        left: 54%;
+        animation-duration: 96s;
+        animation-delay: -89s;
+        transform-origin: -14vw 20vh;
+        box-shadow: -24vmin 0 3.829043865711995vmin currentColor;
+      }
     }
   }
 }
