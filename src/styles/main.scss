@@ -1,0 +1,54 @@
+.Home-container {
+  .Navigation-bar {
+    width: 1439px;
+    height: 84.1px;
+    margin: 0 0 6.9px;
+    padding: 13.9px 5px 0px 70px;
+    background-color: #000;
+  }
+
+  .BrandName {
+    width: 232px;
+    height: 70.2px;
+    margin: 0 979px 0 0;
+    font-family: Inika;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Community {
+    width: 214px;
+    height: 64px;
+    margin: 26.7px 4px 0.3px 439px;
+    object-fit: contain;
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba($color: #ffffff, $alpha: 1);
+  }
+  .Products {
+    width: 154px;
+    height: 64px;
+    margin: 27px 4px 0;
+    font-family: InriaSerif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+}

@@ -1,13 +1,10 @@
 import "./styles/Home.scss";
-
-import AppBar from "./components/AppBar";
-import Front from "./components/Front";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="Home">
-      <AppBar />
-      <Front />
+      <Home />
     </div>
   );
 }
