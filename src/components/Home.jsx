@@ -3,19 +3,21 @@ import "../styles/main.scss";
 export default function Home() {
   return (
     <div className="Home-container">
-      <div class="Navigation-bar">
-        <span class="BrandName">Player ONE</span>
-        <span class="Community">Community</span>
-        <span class="Products">Products</span>
-        <span class="Overview">Overview</span>
+      <div className="Navigation-bar">
+        <span className="BrandName">Player ONE</span>
+        <span className="Community">Community</span>
+        <span className="Products">Products</span>
+        <span className="Overview">Overview</span>
       </div>
-      <div class="Image">
-        <span class="text1">CAPSTONE NBBANG</span>
-        <span class="text2">Smart Control platform with electrode signal</span>
-        <span class="text3">
+      <div className="Image">
+        <span className="text1">CAPSTONE NBBANG</span>
+        <span className="text2">
+          Smart Control platform with electrode signal
+        </span>
+        <span className="text3">
           It's not just muscles that can move We expand the limits of our bodies
         </span>
-        <span class="experience-now">experience now</span>
+        <span className="experience-now">experience now</span>
       </div>
     </div>
   );
