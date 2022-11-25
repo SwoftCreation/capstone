@@ -1,11 +1,13 @@
 .Home-container {
+  width: 100%;
+
   .Navigation-bar {
     width: 100%;
     height: 80px;
     background-color: #000;
 
     .BrandName {
-      margin: auto auto auto auto;
+      margin: auto auto auto 5%;
       font-family: Inika;
       font-size: 40px;
       font-weight: normal;
@@ -29,6 +31,15 @@
       letter-spacing: normal;
       text-align: left;
       color: #fff;
+
+      &:hover {
+        color: rgba($color: #56ffab, $alpha: 1);
+        transition-duration: 2s;
+      }
+      &:not(:hover) {
+        color: white;
+        transition-duration: 2s;
+      }
     }
     .Products {
       margin: auto auto auto 7%;
@@ -41,6 +52,14 @@
       letter-spacing: normal;
       text-align: left;
       color: #fff;
+      &:hover {
+        color: rgba($color: #56ffab, $alpha: 1);
+        transition-duration: 2s;
+      }
+      &:not(:hover) {
+        color: white;
+        transition-duration: 2s;
+      }
     }
 
     .Overview {
@@ -54,18 +73,105 @@
       letter-spacing: normal;
       text-align: left;
       color: #fff;
+      &:hover {
+        color: rgba($color: #56ffab, $alpha: 1);
+        transition-duration: 1.3s;
+      }
+      &:not(:hover) {
+        color: white;
+        transition-duration: 2s;
+      }
+    }
+
+    .Sign-in {
+      margin-left: 10%;
+      font-family: InkFree;
+      font-size: 25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #90ffeb;
     }
   }
-  .text1 {
-    margin: 4% auto auto 5%;
-    font-family: InriaSerif;
-    font-size: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.6px;
-    text-align: left;
-    color: #90ffeb;
+  .Image {
+    width: 100%;
+
+    video {
+      width: 100%;
+      object-fit: fill;
+      opacity: 1;
+      position: absolute;
+      top: 80px;
+      z-index: -1;
+    }
+    .front-texts {
+      z-index: 0;
+      margin-top: 6%;
+      .text1 {
+        margin: 4% auto auto 5%;
+        font-family: InriaSerif;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        text-align: left;
+        color: #90ffeb;
+      }
+      .text2 {
+        margin: 4% auto auto 5%;
+        font-family: InriaSerif;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #fff;
+      }
+      .text3 {
+        margin-left: 5%;
+        font-family: KaiseiHarunoUmi;
+        font-size: 25px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.25px;
+        text-align: left;
+        color: #fff;
+        display: block;
+      }
+
+      .experience-now {
+        border-radius: 10px;
+        padding: 3px;
+        margin-left: 5%;
+        font-family: InriaSerif;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-align: left;
+        background-color: white;
+        opacity: 0.3;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        transition: 1.3s;
+        &:hover {
+          background-color: rgb(255, 0, 0);
+          color: white;
+          transition-duration: 1.3s;
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
