@@ -31,7 +31,6 @@ export default function Home() {
           <span className="experience-now">experience now</span>
         </div>
       </div>
-      <div className="Footer-Frame"></div>
     </div>
   );
 }
