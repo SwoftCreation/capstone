@@ -4,14 +4,12 @@ main {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: black;
+
   section#content {
     position: relative;
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
-    margin-left: 5%;
-    margin-top: 5%;
 
     #front-text {
       z-index: 10;
@@ -52,7 +50,7 @@ main {
       flex-direction: row;
       align-items: flex-end;
       justify-content: space-between;
-
+      animation-name: gra;
       .rectangle {
         width: 13%;
         height: 10%;
@@ -84,17 +82,5 @@ main {
         background-color: white;
       }
     }
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-bottom: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-bottom: 0%;
-    width: 100%;
   }
 }
