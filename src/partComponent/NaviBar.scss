@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
+
+.Navigation-bar {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  padding-top: 20px;
+
+  .BrandName {
+    margin: auto auto auto 5%;
+    font-family: "Source Serif Pro", serif;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .Community {
+    margin: auto auto auto 7%;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+
+    &:hover {
+      color: rgba($color: #56ffab, $alpha: 1);
+      transition-duration: 2s;
+    }
+    &:not(:hover) {
+      color: white;
+      transition-duration: 2s;
+    }
+  }
+  .Products {
+    margin: auto auto auto 7%;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    &:hover {
+      color: rgba($color: #56ffab, $alpha: 1);
+      transition-duration: 2s;
+    }
+    &:not(:hover) {
+      color: white;
+      transition-duration: 2s;
+    }
+  }
+
+  .Overview {
+    margin: auto auto auto 7%;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    &:hover {
+      color: rgba($color: #56ffab, $alpha: 1);
+      transition-duration: 1.3s;
+    }
+    &:not(:hover) {
+      color: white;
+      transition-duration: 2s;
+    }
+  }
+
+  .Sign-in {
+    margin-left: 10%;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #90ffeb;
+    &:hover {
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}

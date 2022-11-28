@@ -27,51 +27,41 @@
     <title>React App</title>
   </head>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap");
     body {
       width: 100vw;
-    }
-    .Footer-Frame {
-      padding-top: 2%;
-      width: 100%;
-      height: 10%;
-      background-color: #000;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
 
-    .Footer-Logo {
-      margin-left: 5%;
-      font-family: InriaSerif;
-      font-size: 20px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 1.5px;
-      text-align: left;
-      color: #fff;
+    footer {
+      position: absolute;
+      bottom: 0px;
     }
-    .Footer-Menu {
+
+    .Footer-Frame {
+      width: 100%;
+      height: 100%;
       text-align: center;
-      font-family: InriaSans;
-      font-size: 15px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 1px;
-      text-align: left;
+      z-index: 0;
+      width: 100%;
+      height: 5%;
+      background-color: #000;
+    }
+    .Footer-Logo {
+      font-family: "Inria Serif", serif;
+      font-size: 10px;
+      letter-spacing: 4px;
       color: #fff;
     }
   </style>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div class="Footer-Frame">
+    <footer class="Footer-Frame">
       <span class="Footer-Logo">NBBANG TEAM</span>
-      <span class="Footer-Menu">team milestones paper</span>
-      <div class="Frame">
-        <span class="Instagram-id">INSTAGRAM @Player ONE</span>
-      </div>
-    </div>
+    </footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
