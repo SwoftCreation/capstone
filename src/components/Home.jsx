@@ -5,7 +5,7 @@ export default function Home() {
     <div className="Home-container">
       <main className="main">
         <section className="Video-Section">
-          <video autoPlay loop muted poster="image/background.jpg">
+          <video autoPlay loop muted placeinline poster="image/background.jpg">
             <source src="video/video.mp4" type="video/mp4" />
             Browser not support this video
           </video>
