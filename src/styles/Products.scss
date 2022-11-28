@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
+
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+  section#content {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+    #front-text {
+      z-index: 10;
+
+      #text1 {
+        font-family: "Source Serif Pro", serif;
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 6px;
+        text-align: left;
+        color: #fff;
+      }
+
+      #text2 {
+        font-family: "Source Serif Pro", serif;
+        font-size: 50px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 10.88px;
+        text-align: left;
+        color: #90ffeb;
+      }
+    }
+
+    div#graph-area {
+      position: absolute;
+      top: 20%;
+      z-index: 3;
+      width: 100%;
+      height: 40%;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .rectangle {
+        width: 13%;
+        height: 10%;
+        background-color: white;
+        &:nth-child(1) {
+          height: 30%;
+        }
+        &:nth-child(2) {
+          height: 40%;
+        }
+        &:nth-child(3) {
+          height: 70%;
+        }
+        &:nth-child(4) {
+          height: 100%;
+        }
+        &:nth-child(5) {
+          height: 120%;
+        }
+        &:nth-child(6) {
+          height: 140%;
+        }
+      }
+
+      .even {
+        background-color: rgba($color: #e45c5c, $alpha: 1);
+      }
+      .odd {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+}
