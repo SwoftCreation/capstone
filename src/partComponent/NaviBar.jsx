@@ -17,6 +17,9 @@ export default function NaviBar() {
             Player ONE
           </p>
         </div>
+        <div className="menu-icon">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
       </div>
       <div className="menu-frame">
         <div>

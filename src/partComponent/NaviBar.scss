@@ -11,8 +11,15 @@ p {
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
-    #logo-p {
-      font-size: 1rem;
+    .nav-logo {
+      justify-content: space-between !important;
+      #logo-p {
+        font-size: 1rem;
+      }
+      .menu-icon {
+        display: block !important;
+        padding-right: 10%;
+      }
     }
 
     .menu-frame {
@@ -47,7 +54,7 @@ p {
     flex-grow: 2;
     flex-shrink: 2;
 
-    div {
+    div:nth-child(1) {
       p {
         font-size: 2.2rem;
         font-weight: bolder;
@@ -55,6 +62,9 @@ p {
         font-family: "Rubik Glitch", cursive;
         white-space: nowrap;
       }
+    }
+    div:nth-child(2) {
+      display: none;
     }
   }
 
