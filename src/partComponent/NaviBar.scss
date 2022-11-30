@@ -50,8 +50,12 @@ p {
       p {
         font-size: 1.5rem;
         letter-spacing: 0.05rem;
+        transition: all 0.5s;
         &:hover {
           color: #90ffeb;
+          padding-bottom: 10%;
+          transition: all 0.3s;
+          transition-timing-function: ease-out;
         }
       }
     }
