@@ -47,6 +47,9 @@ p {
       p {
         font-size: 25px;
         letter-spacing: 0.05rem;
+        &:hover {
+          color: #90ffeb;
+        }
       }
     }
   }
@@ -60,6 +63,9 @@ p {
       font-size: 15px;
       white-space: nowrap;
       color: #90ffeb;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
