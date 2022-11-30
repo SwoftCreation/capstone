@@ -35,20 +35,28 @@
       overflow: scroll;
     }
 
-    footer {
+    .Footer-Frame {
       position: absolute;
       bottom: 0px;
-    }
-
-    .Footer-Frame {
       width: 100%;
       height: 100%;
       text-align: center;
       z-index: 0;
       width: 100%;
-      height: 5%;
+      height: 4%;
       background-color: #000;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
     }
+
+    #footer-text {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
     .Footer-Logo {
       font-family: "Inria Serif", serif;
       font-size: 10px;
@@ -60,7 +68,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <footer class="Footer-Frame">
-      <span class="Footer-Logo">NBBANG TEAM</span>
+      <div id="footer-text"><span class="Footer-Logo">Player ONE</span></div>
     </footer>
     <!--
       This HTML file is a template.
