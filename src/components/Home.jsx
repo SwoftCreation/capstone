@@ -1,7 +1,9 @@
 import "../styles/Home.scss";
 import NaviBar from "../partComponent/NaviBar";
 import Footer from "../partComponent/Footer";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const goto = useNavigate();
   return (
     <div id="container">
       <NaviBar id="navibar" />
@@ -21,7 +23,13 @@ export default function Home() {
           </p>
           <div className="button-frame">
             <div className="front-button">
-              <p>experience now</p>
+              <p
+                onClick={() => {
+                  goto("/Experience");
+                }}
+              >
+                experience now
+              </p>
             </div>
           </div>
         </div>

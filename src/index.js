@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 import Home from "./components/Home";
 import Community from "./components/Community";
 import Products from "./components/Products";
 import Overview from "./components/Overview";
+import Experience from "./components/Experience";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,14 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Overview />
+      </div>
+    ),
+  },
+  {
+    path: "/Experience",
+    element: (
+      <div>
+        <Experience />
       </div>
     ),
   },
