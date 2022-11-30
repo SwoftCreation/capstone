@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import Home from "./components/Home";
 import Community from "./components/Community";
-import NaviBar from "./partComponent/NaviBar";
+import Products from "./components/Products";
 import Overview from "./components/Overview";
 
 const router = createBrowserRouter([
@@ -14,7 +14,6 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <div>
-        <NaviBar />
         <Home />
       </div>
     ),
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
     path: "/Products",
     element: (
       <div>
-        <NaviBar />
+        <Products />
       </div>
     ),
   },
@@ -31,7 +30,6 @@ const router = createBrowserRouter([
     path: "/Community",
     element: (
       <div>
-        <NaviBar />
         <Community />
       </div>
     ),
@@ -40,7 +38,6 @@ const router = createBrowserRouter([
     path: "/Overview",
     element: (
       <div>
-        <NaviBar />
         <Overview />
       </div>
     ),

@@ -1,0 +1,25 @@
+.Footer-Frame {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 0;
+
+  background-color: #000;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-text {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.Footer-Logo {
+  font-family: "Inria Serif", serif;
+  font-size: 1rem;
+  letter-spacing: 0.6rem;
+  color: #fff;
+}
