@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 import Home from "./components/Home";
-import Products from "./components/Products";
 import Community from "./components/Community";
 import NaviBar from "./partComponent/NaviBar";
 import Overview from "./components/Overview";
