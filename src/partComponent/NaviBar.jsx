@@ -13,7 +13,7 @@ export default function NaviBar() {
               goto("/");
             }}
           >
-            PlayerONE
+            Player ONE
           </p>
         </div>
       </div>
