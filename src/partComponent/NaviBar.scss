@@ -1,102 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+p {
+  font-family: "Inria Serif", serif;
+}
 
-.Navigation-bar {
+.nav-container {
   width: 100%;
-  height: 80px;
-  background-color: #000;
-  padding-top: 20px;
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 
-  .BrandName {
-    margin: auto auto auto 5%;
-    font-family: "Source Serif Pro", serif;
-    font-size: 40px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 2px;
-    text-align: left;
-    color: #fff;
-    white-space: nowrap;
-  }
+  .nav-logo {
+    flex-basis: 10%;
 
-  .Community {
-    margin: auto auto auto 7%;
-    font-family: "Source Serif Pro", serif;
-    font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+    align-items: center;
+    flex-grow: 3;
 
-    &:hover {
-      color: rgba($color: #56ffab, $alpha: 1);
-      transition-duration: 2s;
-    }
-    &:not(:hover) {
-      color: white;
-      transition-duration: 2s;
-    }
-  }
-  .Products {
-    margin: auto auto auto 7%;
-    font-family: "Source Serif Pro", serif;
-    font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-    &:hover {
-      color: rgba($color: #56ffab, $alpha: 1);
-      transition-duration: 2s;
-    }
-    &:not(:hover) {
-      color: white;
-      transition-duration: 2s;
+    div {
+      flex-shrink: 0;
+      p {
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 0.2rem;
+        font-family: "Rubik Glitch", cursive;
+      }
     }
   }
 
-  .Overview {
-    margin: auto auto auto 7%;
-    font-family: "Source Serif Pro", serif;
-    font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-    &:hover {
-      color: rgba($color: #56ffab, $alpha: 1);
-      transition-duration: 1.3s;
-    }
-    &:not(:hover) {
-      color: white;
-      transition-duration: 2s;
+  .menu-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 6;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        font-size: 25px;
+        letter-spacing: 0.05rem;
+      }
     }
   }
-
-  .Sign-in {
-    margin-left: 10%;
-    font-family: "Source Serif Pro", serif;
-    font-size: 25px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #90ffeb;
-    &:hover {
-      text-decoration: underline;
-      transition: all 1s;
+  .sign-in-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    p {
+      font-size: 15px;
+      white-space: nowrap;
+      color: #90ffeb;
     }
   }
 }

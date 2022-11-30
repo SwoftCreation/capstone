@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/products",
+    path: "/Products",
     element: (
       <div>
         <NaviBar />
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/community",
+    path: "/Community",
     element: (
       <div>
         <NaviBar />
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/overview",
+    path: "/Overview",
     element: (
       <div>
         <NaviBar />

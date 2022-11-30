@@ -1,45 +1,54 @@
 import React from "react";
-import "./NaviBar.scss";
 import { useNavigate } from "react-router-dom";
+import "./NaviBar.scss";
+
 export default function NaviBar() {
-  const navigation = useNavigate();
+  const goto = useNavigate();
   return (
-    <div>
-      <nav className="Navigation-bar">
-        <span
-          className="BrandName"
-          onClick={() => {
-            navigation("/");
-          }}
-        >
-          Player ONE
-        </span>
-        <span
-          className="Community"
-          onClick={() => {
-            navigation("/community");
-          }}
-        >
-          Community
-        </span>
-        <span
-          className="Products"
-          onClick={() => {
-            navigation("/products");
-          }}
-        >
-          Products
-        </span>
-        <span
-          className="Overview"
-          onClick={() => {
-            navigation("/overview");
-          }}
-        >
-          Overview
-        </span>
-        <span className="Sign-in">Sign in</span>
-      </nav>
+    <div className="nav-container">
+      <div className="nav-logo">
+        <div>
+          <p
+            onClick={() => {
+              goto("/");
+            }}
+          >
+            PlayerONE
+          </p>
+        </div>
+      </div>
+      <div className="menu-frame">
+        <div>
+          <p
+            onClick={() => {
+              goto("/Products");
+            }}
+          >
+            Products
+          </p>
+        </div>
+        <div>
+          <p
+            onClick={() => {
+              goto("/Community");
+            }}
+          >
+            Community
+          </p>
+        </div>
+        <div>
+          <p
+            onClick={() => {
+              goto("/Overview");
+            }}
+          >
+            Overview
+          </p>
+        </div>
+      </div>
+      <div className="sign-in-frame">
+        <p>sign in</p>
+      </div>
     </div>
   );
 }
