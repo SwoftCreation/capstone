@@ -3,6 +3,12 @@ import "../styles/Home.scss";
 export default function Home() {
   return (
     <div className="front-container">
+      <section className="Video-Section">
+        <video autoPlay loop muted placeinline poster="image/background.jpg">
+          <source src="video/video.mp4" type="video/mp4" />
+          Browser not support this video
+        </video>
+      </section>
       <div className="front-texts">
         <p className="text1">CAPSTONE NBBANG</p>
         <p className="text2">Smart Control platform with electrode signal</p>
