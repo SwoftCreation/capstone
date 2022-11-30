@@ -9,6 +9,7 @@ export default function NaviBar() {
       <div className="nav-logo">
         <div>
           <p
+            id="logo-p"
             onClick={() => {
               goto("/");
             }}
@@ -20,6 +21,7 @@ export default function NaviBar() {
       <div className="menu-frame">
         <div>
           <p
+            className="menu-p"
             onClick={() => {
               goto("/Products");
             }}
@@ -29,6 +31,7 @@ export default function NaviBar() {
         </div>
         <div>
           <p
+            className="menu-p"
             onClick={() => {
               goto("/Community");
             }}
@@ -38,6 +41,7 @@ export default function NaviBar() {
         </div>
         <div>
           <p
+            className="menu-p"
             onClick={() => {
               goto("/Overview");
             }}
@@ -47,7 +51,7 @@ export default function NaviBar() {
         </div>
       </div>
       <div className="sign-in-frame">
-        <p>sign in</p>
+        <p id="sign-p">sign in</p>
       </div>
     </div>
   );
