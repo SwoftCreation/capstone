@@ -25,7 +25,6 @@ const router = createBrowserRouter([
     element: (
       <div>
         <NaviBar />
-        <Products />
       </div>
     ),
   },
