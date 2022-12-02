@@ -4,6 +4,17 @@ import "./NaviBar.scss";
 
 export default function NaviBar() {
   const goto = useNavigate();
+
+  React.useEffect(() => {
+    const toggleBtn = document.querySelector(".menu-icon");
+    const menus = document.querySelector(".menu-frame");
+    const signBox = document.querySelector(".sign-in-frame");
+    toggleBtn.addEventListener("click", () => {
+      menus.classList.toggle("close");
+      signBox.classList.toggle("close");
+    });
+  }, []);
+
   return (
     <div className="nav-container">
       <div className="nav-logo">
@@ -18,7 +29,7 @@ export default function NaviBar() {
           </p>
         </div>
         <div className="menu-icon">
-          <span class="material-symbols-outlined">menu</span>
+          <span className="material-symbols-outlined">menu</span>
         </div>
       </div>
       <div className="menu-frame">

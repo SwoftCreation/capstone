@@ -8,6 +8,10 @@ p {
 
 .nav-container {
   @include mobile {
+    .close {
+      display: none !important;
+    }
+
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
@@ -45,7 +49,6 @@ p {
 
   .nav-logo {
     flex-basis: 10%;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
