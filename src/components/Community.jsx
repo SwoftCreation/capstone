@@ -7,7 +7,7 @@ import { TextField, Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 export default function Community() {
   const [text] = useWindupString("Community 기능이 추가될 예정입니다");
-  const 
+  const dispatch = useDispatch();
   const [post, setPost] = useState({
     title: "",
     content: "",
