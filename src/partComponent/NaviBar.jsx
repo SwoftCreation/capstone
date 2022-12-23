@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 
 export default function NaviBar() {
   const [user, setUser] = React.useState({
+    isLogined: false,
     playerCode: "empty",
     passwdIcon: "empty",
   });
@@ -30,7 +31,7 @@ export default function NaviBar() {
     });
   }, []);
 
-  async function login() {
+  const login = async () => {
     const userInfo = { playerCode: "empty", passwdIcon: "empty" };
 
     userInfo.playerCode = await Swal.fire({
@@ -78,8 +79,8 @@ export default function NaviBar() {
       },
     });
 
-    setUser(userInfo);
-  }
+    setUser({ ...userInfo, isLogined: !user.isLogined });
+  };
 
   return (
     <div className="nav-container">
@@ -131,12 +132,7 @@ export default function NaviBar() {
         </div>
       </div>
       <div className="sign-in-frame">
-        <p
-          id="sign-p"
-          onClick={() => {
-            login();
-          }}
-        >
+        <p id="sign-p" onClick={login}>
           sign in
         </p>
       </div>

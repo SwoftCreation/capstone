@@ -29,7 +29,7 @@ export default function Community() {
             </label>
             <label>
               content
-              <textare
+              <textarea type="text" value={post.content} onChange={onChange} />
             </label>
           </form>
         </div>
