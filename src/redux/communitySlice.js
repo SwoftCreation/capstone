@@ -27,7 +27,8 @@ const communitySlice = createSlice({
       // TODO: 추후에 이건 아예 게시글이 없으면 dispatch를 못하게 막아야함.
       if (state.totalPostNum !== 0) {
         state.totalPostNum -= 1;
-        state.posts = [];
+        //TODO: 이 기능은 테스트 해봐야함 아직 테스트 안해봄
+        state.posts = state.posts.filter((post) => post.id !== action.id);
       } else {
         console.error("error: There is no post now");
       }
