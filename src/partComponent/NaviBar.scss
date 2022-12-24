@@ -99,15 +99,17 @@ p {
           transition-timing-function: ease-out;
           .menu-sub {
             display: inline-block;
+            transition: all 1s;
             li {
-              font-size: 1rem !important;
-              letter-spacing: 0.05rem;
+              font-size: 1rem;
               transition: all 0.5s;
               list-style: none;
               color: #ffffff;
               &:hover {
                 color: #90ffeb;
                 text-decoration: underline solid white;
+                padding-bottom: 0;
+                transition: all 0.5s;
               }
             }
           }
