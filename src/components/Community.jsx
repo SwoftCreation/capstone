@@ -6,7 +6,10 @@ import { useWindupString } from "windups";
 import { TextField, Button } from "@mui/material";
 import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 export default function Community() {
+  const goto = useNavigate();
   const [text] = useWindupString("Community 기능이 추가될 예정입니다");
   const dispatch = useDispatch();
   const [post, setPost] = useState({
@@ -24,29 +27,38 @@ export default function Community() {
   };
 
   const onOkayBtnClicked = (e) => {
-    Swal.fire({
-      title: "글을 발행하시겠습니까?",
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: "Save",
-      denyButtonText: `Don't save`,
-    }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
-      if (result.isConfirmed) {
-        dispatch({
-          type: "community/create",
-          post: { title: post.title, content: post.content },
-        });
-        setPost({ title: "", content: "" });
-        Swal.fire("게시글이 발행되었습니다", "", "success");
-      } else if (result.isDenied) {
-        Swal.fire("게시글 발행이 취소되었습니다", "", "info");
-      }
-    });
-    e.preventDefault();
+    if (post.title !== "" && post.content !== "") {
+      Swal.fire({
+        title: "글을 발행하시겠습니까?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Save",
+        denyButtonText: `Don't save`,
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          dispatch({
+            type: "community/create",
+            post: { title: post.title, content: post.content },
+          });
+          setPost({ title: "", content: "" });
+          Swal.fire("게시글이 발행되었습니다", "", "success");
+        } else if (result.isDenied) {
+          Swal.fire("게시글 발행이 취소되었습니다", "", "info");
+        }
+        e.preventDefault();
+      });
+    } else {
+      console.log("제목과 글을 모두 입력해주세요");
+      Swal.fire({
+        text: "제목과 글이 모두 입력되지 않았습니다",
+        icon: "error",
+      });
+    }
   };
 
   const onCancelBtnClicked = (e) => {
+    goto("/");
     e.preventDefault();
   };
 
