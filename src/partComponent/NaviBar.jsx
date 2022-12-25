@@ -111,16 +111,23 @@ export default function NaviBar() {
           </li>
         </div>
         <div>
-          <li
-            className="menu-p"
-            onClick={() => {
-              goto("/Community");
-            }}
-          >
+          <li className="menu-p">
             Community
             <ul className="menu-sub">
-              <li>Square</li>
-              <li>write Post</li>
+              <li
+                onClick={() => {
+                  goto("/posts");
+                }}
+              >
+                Square
+              </li>
+              <li
+                onClick={() => {
+                  goto("/Community");
+                }}
+              >
+                write Post
+              </li>
             </ul>
           </li>
         </div>

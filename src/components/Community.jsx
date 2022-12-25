@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Footer from "../partComponent/Footer";
 import NaviBar from "../partComponent/NaviBar";
 import "../styles/Community.scss";
-import { useWindupString } from "windups";
 import { TextField, Button } from "@mui/material";
 import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
@@ -10,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function Community() {
   const goto = useNavigate();
-  const [text] = useWindupString("Community 기능이 추가될 예정입니다");
   const dispatch = useDispatch();
   const [post, setPost] = useState({
     title: "",
@@ -43,6 +41,7 @@ export default function Community() {
           });
           setPost({ title: "", content: "" });
           Swal.fire("게시글이 발행되었습니다", "", "success");
+          goto("/posts");
         } else if (result.isDenied) {
           Swal.fire("게시글 발행이 취소되었습니다", "", "info");
         }
@@ -58,8 +57,7 @@ export default function Community() {
   };
 
   const onCancelBtnClicked = (e) => {
-    goto("/");
-    e.preventDefault();
+    goto("/posts");
   };
 
   return (
