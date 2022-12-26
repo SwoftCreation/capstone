@@ -13,6 +13,7 @@ import Experience from "./components/Experience";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import Posts from "./components/subComponents/Posts";
+
 //TODO: 여기서 react.lazy / suspense 를 사용해서 로딩화면 및 지연로딩을 구현해야 한다.
 // LazyCommunity = lazy(() => {
 //   import "./components/Community";

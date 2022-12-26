@@ -1,4 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+
+import { db } from "../firebase/firebase";
+import { collection, addDoc } from "firebase/firestore";
 const communitySlice = createSlice({
   name: "community",
   initialState: {
@@ -21,6 +24,9 @@ const communitySlice = createSlice({
         ...state.posts,
         { title: action.post.title, content: action.post.content },
       ];
+
+      //firestore 추가
+      addToFirestore(state, action);
     },
     update: (state, action) => {},
     delete: (state, action) => {
@@ -36,4 +42,15 @@ const communitySlice = createSlice({
   },
 });
 
+async function addToFirestore(state, action) {
+  try {
+    const docRef = await addDoc(collection(db, "posts"), {
+      postNum: state.totalPostNum,
+      title: action.post.title,
+      content: action.post.content,
+    });
+  } catch (e) {
+    console.log("firestore error : " + e);
+  }
+}
 export default communitySlice.reducer;
