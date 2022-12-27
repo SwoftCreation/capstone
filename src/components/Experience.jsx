@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../partComponent/Footer";
 import NaviBar from "../partComponent/NaviBar";
+import RealtimeAnimation from "./subComponents/RealtimeAnimation";
 import { useWindupString } from "windups";
 
 import "../styles/Experience.scss";
@@ -11,6 +12,7 @@ export default function Experience() {
       <NaviBar id="navibar" />
       <div className="front-container">
         <h1>{text}</h1>
+        <RealtimeAnimation />
       </div>
       <Footer />
     </div>

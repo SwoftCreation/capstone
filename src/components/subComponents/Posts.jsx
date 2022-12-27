@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Footer from "../../partComponent/Footer";
 import NaviBar from "../../partComponent/NaviBar";
-
 import { useWindupString } from "windups";
-
 import "../../styles/Experience.scss";
-import { useSelector } from "react-redux";
 import PostCard from "../../partComponent/PostCard";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
 //firebase
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebase";

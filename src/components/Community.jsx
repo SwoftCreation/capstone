@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+//FIXME: 리렌더링 횟수 줄여야함
+
+import React, { useState, useMemo } from "react";
 import Footer from "../partComponent/Footer";
 import NaviBar from "../partComponent/NaviBar";
 import "../styles/Community.scss";
