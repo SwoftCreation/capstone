@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../../partComponent/Footer";
 import NaviBar from "../../partComponent/NaviBar";
 
@@ -14,21 +14,33 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
 
 export default function Posts() {
+  const [posts, setPosts] = useState([
+    {
+      title: "loading",
+      content: "loading",
+    },
+  ]);
   const goto = useNavigate();
   const state = useSelector((state) => {
     return state.communityReducer.posts;
   });
+  const [text] = useWindupString(`작성된 게시물이 ${posts.length} 개 있습니다`);
 
-  console.log(state, "and the type of state is " + typeof state);
-  const [text] = useWindupString(`작성된 게시물이 ${state.length} 개 있습니다`);
+  useEffect(() => {
+    getPosts().then((result) => {
+      setPosts(result);
+      console.log("useEffect");
+    });
+  }, []);
 
+  console.log(posts);
   return (
     <div id="container">
       <NaviBar id="navibar" />
       <div className="front-container">
         <h1>{text}</h1>
-        <PostCard post={state} />
 
+        <PostCard post={posts} />
         <Button
           onClick={() => {
             goto("/community");
@@ -47,14 +59,17 @@ export default function Posts() {
 // 잘 생각해볼것
 async function getPosts() {
   const posts = [];
-  const querySnapshot = await getDocs(collection(db, "posts"));
-  console.log("******");
-  querySnapshot.forEach((doc) => {
-    posts.push({
-      title: doc.data().title,
-      content: doc.data().content,
+  try {
+    const querySnapshot = await getDocs(collection(db, "posts"));
+    querySnapshot.forEach((doc) => {
+      posts.push({
+        title: doc.data().title,
+        content: doc.data().content,
+      });
     });
-  });
-  console.log(posts, typeof posts);
+  } catch (e) {
+    console.log("getPosts : ", e);
+  }
+
   return posts;
 }

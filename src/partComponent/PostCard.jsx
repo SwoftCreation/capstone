@@ -3,6 +3,8 @@ import { CardContent, CardActions, Typography, Button } from "@mui/material";
 
 export default function PostCard(props) {
   const state = props.post;
+  console.log("***전달받은 props***");
+  console.log(JSON.stringify(props));
   return (
     <div>
       {state.map((element, key) => (
