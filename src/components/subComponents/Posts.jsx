@@ -21,9 +21,7 @@ export default function Posts() {
     },
   ]);
   const goto = useNavigate();
-  const state = useSelector((state) => {
-    return state.communityReducer.posts;
-  });
+
   const [text] = useWindupString(`작성된 게시물이 ${posts.length} 개 있습니다`);
 
   useEffect(() => {

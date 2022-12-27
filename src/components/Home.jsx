@@ -3,11 +3,11 @@ import React from "react";
 import NaviBar from "../partComponent/NaviBar";
 import Footer from "../partComponent/Footer";
 import { useNavigate } from "react-router-dom";
-import { useWindupString } from "windups";
+// import { useWindupString } from "windups";
 export default function Home() {
-  const [text1] = useWindupString(
-    "Smart Control platform with electrode signal"
-  );
+  // const [text1] = useWindupString(
+  //   "Smart Control platform with electrode signal"
+  // );
   const goto = useNavigate();
   return (
     <div id="container">
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div className="front-texts">
           <p className="text1">CAPSTONE NBBANG</p>
-          <p className="text2">{text1}</p>
+          <p className="text2">Smart Control platform with electrode signal</p>
           <p className="text3">
             It's not just muscles that can move
             <br /> We expand the limits of our bodies
