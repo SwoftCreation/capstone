@@ -50,17 +50,19 @@ export default function Experience() {
     <div id="container">
       <NaviBar id="navibar" />
       <div className="front-container">
-        <IconButton
-          color="primary"
-          aria-label="upload picture"
-          component="label"
-          onClick={getFirestoreValue}
-        >
-          {btn === "off" ? <PlayArrowIcon /> : <PauseIcon />}
-        </IconButton>
-        {btn === "off" ? <></> : <CircularProgress />}
-
-        <RealtimeAnimation moveValue={moveValue} />
+        <div className="wrapper">
+          {" "}
+          <IconButton
+            color="primary"
+            aria-label="upload picture"
+            component="label"
+            onClick={getFirestoreValue}
+          >
+            {btn === "off" ? <PlayArrowIcon /> : <PauseIcon />}
+          </IconButton>
+          {btn === "off" ? <></> : <CircularProgress />}
+          <RealtimeAnimation moveValue={moveValue} />
+        </div>
       </div>
       <Footer />
     </div>
