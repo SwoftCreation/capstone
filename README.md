@@ -1,4 +1,4 @@
-[PlayerONE]
+[PlayerONE]플레이어원
 
 Soongsil Univ. capstone project [2022-12 ~ 2023-6]
 
