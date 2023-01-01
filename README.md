@@ -2,8 +2,8 @@
 <pre>
   <h3>Soongsil Univ. capstone project [2022-12 ~ 2023-6]</h3>
 
-<p>This project aims to control muscle signals through electromyogram sensors to control other devices in real time.
-This repository covers client programs that link data from devices to cloud Firestore in real time and render it animated using three.js. 
+<p>This project aims to control muscle signals through electromyogram sensors to control other devices in real time.<br/>
+This repository covers client programs that link data from devices to cloud Firestore in real time and render it animated using three.js. <br/>
 In addition, we will provide community services.</p>
 </pre>
   <hr/>
@@ -27,7 +27,6 @@ Next.js (plan)
   <h4>의존성 추가 및 제거</h4><p>add or remove dependency</p>
   <h4>디자인 변경</h4><p>change design</p>
   <h4>구조 개선</h4><p>enhance architecture</p>
- 
   </pre>
 
   
