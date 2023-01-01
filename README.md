@@ -1,11 +1,11 @@
 <h1>[PlayerONE]플레이어원</h1>
-
+<pre>
   <h3>Soongsil Univ. capstone project [2022-12 ~ 2023-6]</h3>
 
 <p>This project aims to control muscle signals through electromyogram sensors to control other devices in real time.
 This repository covers client programs that link data from devices to cloud Firestore in real time and render it animated using three.js. 
 In addition, we will provide community services.</p>
-
+</pre>
   <hr/>
   <h3>used Library</h3>
   <pre>
