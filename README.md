@@ -8,6 +8,7 @@ In addition, we will provide community services.</p>
 
   <hr/>
   <h3>used Library</h3>
+  <pre>
 React
 React-router-dom
 Redux
@@ -15,6 +16,7 @@ Material UI
 Three.js (plan)
 Next.js (plan)
 ...etc css library.
+</pre>
 
 
 <hr/>
