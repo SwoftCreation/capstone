@@ -13,7 +13,7 @@ React
 React-router-dom
 Redux
 Material UI
-Three.js (plan)
+Three.js ( three / fiber / drei ) 
 Next.js (plan)
 ...etc css library.
 </pre>
