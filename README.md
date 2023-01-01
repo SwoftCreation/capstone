@@ -7,7 +7,7 @@ This repository covers client programs that link data from devices to cloud Fire
 In addition, we will provide community services.<p>
 
   <hr/>
-  <h3>
+  <h3>used Library</h3>
 React
 React-router-dom
 Redux
@@ -15,9 +15,9 @@ Material UI
 Three.js (plan)
 Next.js (plan)
 ...etc css library.
-  </h3>
+
 
 <hr/>
-
+  <h3>Commit message rule</h3>
 
   
