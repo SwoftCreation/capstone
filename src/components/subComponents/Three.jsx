@@ -6,8 +6,16 @@ export function Three(props) {
 
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  useFrame((state, delta) => (mesh.current.rotation.x += delta));
+  useFrame((state, delta) => {
+    if (props.moveValue === "move left") mesh.current.rotation.y -= delta;
+    else if (props.moveValue === "move right") mesh.current.rotation.y += delta;
+    else if (props.moveValue === "stop") mesh.current.rotation = 0;
+    else {
+      setErrorMessage("no moveValue");
+    }
+  });
 
   return (
     <mesh

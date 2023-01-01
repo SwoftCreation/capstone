@@ -30,7 +30,7 @@ export default function Experience() {
   const signal = (signal) => {
     if (signal === 0) return "stop";
     else if (signal === 1) return "move left";
-    else if (signal === 2) return "move front";
+    else if (signal === 2) return "move right";
     else return "other signal";
   };
 
@@ -69,9 +69,8 @@ export default function Experience() {
         <div>
           <Canvas>
             <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <Three position={[-3, 0, 0]} />
-            <Three position={[3, 0, 0]} />
+            <pointLight position={[30, 30, 30]} />
+            <Three position={[0, 0, 0]} moveValue={moveValue} />
           </Canvas>
         </div>
       </div>
