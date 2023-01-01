@@ -20,6 +20,9 @@ import PauseIcon from "@mui/icons-material/Pause";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import CircularProgress from "@mui/material/CircularProgress";
 
+import { Canvas } from "@react-three/fiber";
+import { Three } from "./subComponents/Three";
+
 export default function Experience() {
   const [moveValue, setMoveValue] = useState("Press start");
   const [btn, setBtn] = useState("off");
@@ -62,6 +65,14 @@ export default function Experience() {
           </IconButton>
           {btn === "off" ? <></> : <CircularProgress />}
           <RealtimeAnimation moveValue={moveValue} />
+        </div>
+        <div>
+          <Canvas>
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
+            <Three position={[-3, 0, 0]} />
+            <Three position={[3, 0, 0]} />
+          </Canvas>
         </div>
       </div>
       <Footer />
