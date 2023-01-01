@@ -4,7 +4,7 @@
 
 <p>This project aims to control muscle signals through electromyogram sensors to control other devices in real time.
 This repository covers client programs that link data from devices to cloud Firestore in real time and render it animated using three.js. 
-In addition, we will provide community services.<p>
+In addition, we will provide community services.</p>
 
   <hr/>
   <h3>used Library</h3>
