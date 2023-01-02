@@ -31,5 +31,5 @@ Next.js (plan)
   </pre>
 <hr/>
   <h3>result</h3>
-<p>Mid check : A0</p>
+<p>Mid check 2022-2 : A0</p>
 
