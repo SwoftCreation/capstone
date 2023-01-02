@@ -30,7 +30,7 @@ Next.js (plan)
   <h4>구조 개선</h4><p>enhance architecture : {details}</p>
   </pre>
 <hr/>
-<
+
 <h3>result</h3>
 <p>Mid check 2022-2 : A0</p>
  
