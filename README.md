@@ -29,5 +29,7 @@ Next.js (plan)
   <h4>디자인 변경</h4><p>change design : {Component name}</p>
   <h4>구조 개선</h4><p>enhance architecture : {details}</p>
   </pre>
+<hr/>
+  <h3>result</h3>
+<p>Mid check : A0</p>
 
-  
